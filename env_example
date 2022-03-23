@@ -1,0 +1,7 @@
+DB_NAME=fastapi
+DB_USER=fastapi
+DB_PASS=fastapi
+DB_PORT=4563
+DB_HOST=localhost
+FIRST_SUPERUSER=admin@admin.com
+FIRST_SUPERUSER_PASSWORD=admin

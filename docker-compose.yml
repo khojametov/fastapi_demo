@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  db:
+    image: postgres:14.1-alpine
+    container_name: "fastapi-postgres"
+    environment:
+      - POSTGRES_DB=$DB_NAME
+      - POSTGRES_USER=$DB_USER
+      - POSTGRES_PASSWORD=$DB_PASS
+    ports:
+      - "${DB_PORT}:5432"
+    volumes:
+      - db:/var/lib/postgresql/data
+volumes:
+  db:
+    driver: local
